@@ -48,6 +48,7 @@ struct HashTable {
 
             if (table[val]->check == true) {
                 table[val]->key = key;
+                table[val]->check = false;
                 return;
             }
         }
